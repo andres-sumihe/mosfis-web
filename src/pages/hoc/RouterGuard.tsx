@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react';
 
@@ -14,13 +15,14 @@ function RouterGuard({ children }: RouterGuardProps) {
 
   function authCheck(url: string) {
     // redirect to login page if accessing a private page and not logged in
-    const publicPaths = ['/login'];
+    const publicPaths = ['/login/', '/welcome/', '/register/'];
     const path = url.split('?')[0];
 
     if (!authUser && !publicPaths.includes(path!)) {
       setAuthorized(false);
+
       router.push({
-        pathname: '/login',
+        pathname: '/welcome',
         query: { returnUrl: router.asPath },
       });
     } else {
