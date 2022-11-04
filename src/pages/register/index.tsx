@@ -1,4 +1,4 @@
-import CustomHeader1 from '@/components/CustomHeader1';
+import CustomHeader1 from '@/components/headers/CustomHeader1';
 import { screenBaseWidthAndAlign } from '@/styles/globalStyles';
 
 import RegisterForm from './components/RegisterForm';

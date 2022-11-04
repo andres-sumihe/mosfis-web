@@ -2,9 +2,9 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 
-import CustomButton from '@/components/CustomButton';
-import CustomDropdown from '@/components/CustomDropdown';
-import CustomInput from '@/components/CustomInput';
+import CustomButton from '@/components/buttons/CustomButton';
+import CustomDropdown from '@/components/dropdown/CustomDropdown';
+import CustomInput from '@/components/forms/CustomInput';
 import type { RegisterFormValues } from '@/global/types/globalTypes';
 import { kategori } from '@/global/variables/globalDropdown';
 import { yupRegisterConfig } from '@/global/yup/globalYup';
