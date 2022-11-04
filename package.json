@@ -20,11 +20,14 @@
   },
   "dependencies": {
     "firebase": "^9.13.0",
+    "@hookform/resolvers": "^2.9.10",
     "next": "^12.3.0",
     "next-seo": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "react-hook-form": "^7.39.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
@@ -35,7 +38,8 @@
     "@testing-library/react": "^13.4.0",
     "@types/jest": "^29.0.0",
     "@types/node": "^18.7.16",
-    "@types/react": "^18.0.18",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "autoprefixer": "^10.4.8",
