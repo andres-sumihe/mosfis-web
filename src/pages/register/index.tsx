@@ -1,14 +1,17 @@
 import CustomHeader1 from '@/components/headers/CustomHeader1';
-import { screenBaseWidthAndAlign } from '@/styles/globalStyles';
+import { Meta } from '@/layouts/Meta';
+import { Main } from '@/templates/Main';
 
 import RegisterForm from './components/RegisterForm';
 
 const index = () => {
   return (
-    <div className={screenBaseWidthAndAlign}>
+    <Main
+      meta={<Meta title="Mosfis | Selamat Datang" description="Register" />}
+    >
       <CustomHeader1 title={'Daftar Mosfis'} />
       <RegisterForm />
-    </div>
+    </Main>
   );
 };
 

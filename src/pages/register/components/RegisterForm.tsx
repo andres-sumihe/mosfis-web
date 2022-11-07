@@ -8,7 +8,7 @@ import CustomInput from '@/components/forms/CustomInput';
 import type { RegisterFormValues } from '@/global/types/globalTypes';
 import { kategori } from '@/global/variables/globalDropdown';
 import { yupRegisterConfig } from '@/global/yup/globalYup';
-import { formStyle1 } from '@/styles/globalStyles';
+import { formStyle } from '@/styles/globalStyles';
 
 import CheckboxAgreeTerms from './CheckboxAgreeTerms';
 
@@ -22,7 +22,7 @@ const RegisterForm = () => {
   const Register = () => {};
 
   return (
-    <div className={formStyle1}>
+    <div className={formStyle}>
       <form onSubmit={handleSubmit(Register)}>
         <CustomInput
           name={'Nama Lengkap'}

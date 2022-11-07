@@ -6,11 +6,11 @@ const onErrorBorderStyle =
 
 const screenBaseWidthAndAlign = 'mx-auto w-[360px]';
 
-const formStyle1 =
-  'bg-white px-[17px] pt-[30px] border rounded-2xl relative -top-[13px]';
+const formStyle =
+  'bg-white px-[17px] pt-[30px] rounded-2xl relative -top-[13px]';
 
 export {
-  formStyle1,
+  formStyle,
   onErrorBorderStyle,
   onNormalBorderStyle,
   screenBaseWidthAndAlign,
