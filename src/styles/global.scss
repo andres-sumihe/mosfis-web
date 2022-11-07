@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @import './variables';
+@import './animations';
 
 // Import Components CSS
-@import './buttons/buttons'
+@import './buttons/buttons';
+@import './slider/slider'
+
