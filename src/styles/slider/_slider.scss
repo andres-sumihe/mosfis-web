@@ -1,5 +1,3 @@
-@import '../variables';
-
 .swiper {
   width: 100%;
   height: 100%;
@@ -24,12 +22,6 @@
   -webkit-align-items: center;
   align-items: center;
 
-  img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
   &.welcome {
     flex-direction: column;
@@ -38,26 +30,25 @@
 }
 
 .slider {
-	$dotSize   : 1;
-	$dotMargin : .5;
+  $dotSize: 1;
+  $dotMargin: 0.5;
 
   &__dots {
-		display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-	}
-	
-	&__dot {
-		display: block;
-		margin: 0 #{ $dotMargin/3 }em;
-		width: #{ $dotSize/2 }em;
-		height: #{ $dotSize/2 }em;
-		background: rgba($color: #000000, $alpha: 0.1);
-		border-radius: 100px;
+  }
+
+  &__dot {
+    display: block;
+    margin: 0 #{$dotMargin/3}em;
+    width: #{$dotSize/2}em;
+    height: #{$dotSize/2}em;
+    background: rgba($color: #000000, $alpha: 0.1);
+    border-radius: 100px;
 
     &.active {
       background-color: $greenPrimary;
     }
-	}
-	
+  }
 }

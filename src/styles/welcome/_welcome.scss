@@ -1,0 +1,28 @@
+.swiper {
+  .swiper-slide {
+    .slider-component {
+      .title {
+        width: fit-content;
+        margin: auto;
+        padding-bottom: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.1px;
+        color: #252b42;
+        border-bottom: 2px solid $redPrimary;
+      }
+
+      .description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        margin-top: 10px;
+        color: #737373;
+      }
+    }
+  }
+}

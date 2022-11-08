@@ -5,8 +5,10 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import CustomButton from '@/components/buttons/CustomButton';
+import { welcomeSliderData } from '@/global/variables/welcomeSliderData';
 
 import DotsIndicator from './DotsIndicator';
+import SliderComponent from './SliderComponent';
 
 interface IWelcomeSliderProps {
   callback: Function;
@@ -26,8 +28,8 @@ const WelcomeSlider = (props: IWelcomeSliderProps) => {
       >
         <SwiperSlide className="welcome">
           <img
-            className="mb-[50px] max-h-[50px] max-w-[50px]"
-            src={`${router.basePath}/apple-touch-icon.png`}
+            className="mb-[50px] w-full max-w-[176px]"
+            src={`${router.basePath}/assets/images/logo-tulisan.png`}
             alt="Nextjs starter banner"
           />
           <h2 className="font-semibold">
@@ -48,10 +50,15 @@ const WelcomeSlider = (props: IWelcomeSliderProps) => {
             </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="welcome">T</SwiperSlide>
-        <SwiperSlide className="welcome">T</SwiperSlide>
-        <SwiperSlide className="welcome"></SwiperSlide>
-        <SwiperSlide className="welcome"></SwiperSlide>
+        {welcomeSliderData.map((data: any, index: number) => (
+          <SwiperSlide className="welcome" key={index}>
+            <SliderComponent
+              title={data.title}
+              imgPath={data.imgPath}
+              description={data.description}
+            />
+          </SwiperSlide>
+        ))}
       </Swiper>
       <DotsIndicator index={slideIndex} />
     </div>

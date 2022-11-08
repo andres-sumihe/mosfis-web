@@ -25,7 +25,7 @@ const Welcome = () => {
       <div
         className={`custom-animation ${
           slideIndex === 0 ? 'fade-in' : 'fade-out'
-        } text-center text-[12px]`}
+        } mt-6 text-center text-[12px]`}
       >
         <p>© 2021-2022, MOSFIS INDONESIA</p>
       </div>
