@@ -1,7 +1,7 @@
 import type { UseFormRegisterReturn } from 'react-hook-form';
 import type { FieldError } from 'react-hook-form/dist/types/errors';
 
-import { errorBox } from '../styles/registerStyles';
+import { errorBox } from '../../styles/registerStyles';
 
 interface CheckboxAgreeTermsProps {
   errors?: FieldError;

@@ -2,7 +2,7 @@ import CustomHeader1 from '@/components/headers/CustomHeader1';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
-import RegisterForm from './components/RegisterForm';
+import RegisterForm from '../../components/register/RegisterForm';
 
 const index = () => {
   return (

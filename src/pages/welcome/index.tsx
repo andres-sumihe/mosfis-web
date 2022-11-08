@@ -4,8 +4,8 @@ import CustomButton from '@/components/buttons/CustomButton';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
-import WelcomeHeader from './components/WelcomeHeader';
-import WelcomeSlider from './components/WelcomeSlider';
+import WelcomeHeader from '../../components/welcome/WelcomeHeader';
+import WelcomeSlider from '../../components/welcome/WelcomeSlider';
 
 const Welcome = () => {
   const [slideIndex, setSlideIndex] = useState(0);
