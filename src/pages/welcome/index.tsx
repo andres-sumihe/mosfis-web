@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import CustomButton from '@/components/buttons/CustomButton';
+import DefaultButton from '@/components/buttons/DefaultButton';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 
@@ -18,8 +18,8 @@ const Welcome = () => {
           slideIndex !== 0 ? 'fade-in' : 'fade-out'
         }`}
       >
-        <CustomButton value={'Masuk'} />
-        <CustomButton value={'Daftar'} />
+        <DefaultButton href={'/login'} title={'Masuk'} />
+        <DefaultButton href={'/register'} title={'Daftar'} />
       </div>
 
       <div

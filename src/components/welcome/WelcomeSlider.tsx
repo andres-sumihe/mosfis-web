@@ -4,9 +4,9 @@ import router from 'next/router';
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import CustomButton from '@/components/buttons/CustomButton';
 import { welcomeSliderData } from '@/global/variables/welcomeSliderData';
 
+import DefaultButton from '../buttons/DefaultButton';
 import DotsIndicator from './DotsIndicator';
 import SliderComponent from './SliderComponent';
 
@@ -39,10 +39,10 @@ const WelcomeSlider = (props: IWelcomeSliderProps) => {
             Solusi teknologi dalam industri perikanan yang adil untuk semua
             orang
           </p>
-          <CustomButton value={'Masuk'} />
-          <CustomButton value={'Daftar'} />
+          <DefaultButton href={'/login'} title={'Masuk'} />
+          <DefaultButton href={'/register'} title={'Daftar'} />
           <div>
-            <p className="text-[8px] leading-[14px] tracking-[0.2px]">
+            <p className="mb-4 text-[8px] leading-[14px] tracking-[0.2px]">
               Lupa nama pengguna atau kata sandi? <br />
               <span className="text-[#00AAAD]">
                 <a>Hubungi Costumer Service</a>
@@ -54,7 +54,7 @@ const WelcomeSlider = (props: IWelcomeSliderProps) => {
           <SwiperSlide className="welcome" key={index}>
             <SliderComponent
               title={data.title}
-              imgPath={data.imgPath}
+              imgPath={`${router.basePath}/${data.imgPath}`}
               description={data.description}
             />
           </SwiperSlide>
